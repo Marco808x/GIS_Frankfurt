@@ -1,0 +1,10 @@
+pip install: 
+	- pyproj 
+	- python-dotenv
+	- regex
+	- os-sys
+	- googlemaps
+	- plotly
+	- geopandas
+	- sqlalchemy
+	- psycopg2-binary
