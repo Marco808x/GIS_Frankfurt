@@ -1,8 +1,11 @@
 
-Frankfurt map:
-create a geographical information systems wich shows you the value of an area based on the number of schools, trees and transport stations in a radius of 500m.
-A Grid of coordinationpoints was created only. 
-This programm calculates a value for each coordinationpoints wich are spread over Frankfurt. For each of these points a scores gets calculated. To calculated the score all trees, schools and transport stations inside the radius (≈700m) of a point where counted. Based on these numbers a scores gets calculated for a point. The score gets later plotted with a color (red-green). 
+GIS Frankfurt is a map of Frankfurt wich shows the value of an area in a color between red and green, based on the number of schools, trees and transport stations are around. 
+First of all, the required data was collected from the sides. Then the data get cleaned (includes converting one coordination system into an other, get the longitude and latitude for dresses and more) und were uploaded to a local sql databank. 
+In the next step, a grid of geographic points over Frankfurt was created. 
+For each of these points a value was calculated based on the number of trees, schools and transport station wich are inside a radius of 700m:
+point value = tree*number inside a circle*wieght + …(schools)… + …(transport stations)…
+After the calculation the values were scaled and uploaded into the sql db. 
+In the last step the value were plotted in a counter map together with the borders of Frankfurt. 
 
 
 data_cleaning:
@@ -19,5 +22,6 @@ map.py:
 data source: 
    - government 
    - rmv 
-   - https://github.com/codeforamerica/click_that_hood/blob/master/public/data/frankfurt-main.geojson
 
+
+![Bildschirmfoto 2021-04-15 um 17 56 06](https://user-images.githubusercontent.com/76050281/114900159-e5172a80-9e13-11eb-922e-96428ea02759.png)
