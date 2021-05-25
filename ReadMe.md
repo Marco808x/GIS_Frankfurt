@@ -17,5 +17,5 @@ data source:
    - rmv 
 
 
-screenshot of interactive html_map:
+interactive html_map:
 ![Bildschirmfoto 2021-04-15 um 17 56 06](https://user-images.githubusercontent.com/76050281/114900159-e5172a80-9e13-11eb-922e-96428ea02759.png)
